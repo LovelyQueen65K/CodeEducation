@@ -1,6 +1,6 @@
 <?php
 /**
- * Application level Controller
+ * Application level Controlleraaaaaaaaaaaaaccccccccccccccccccvvvvvv
  *
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
@@ -23,22 +23,22 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	//Auth Component‚Ì“Ç‚Ýž‚Ý
+	//Auth Componentã®èª­ã¿è¾¼ã¿
 	public $components = array(
 		'Flash',
 		'Auth' => array(
-			//ƒƒOƒCƒ“Œã‚Ìƒy[ƒW‚ðŽw’è
+			//ãƒ­ã‚°ã‚¤ãƒ³å¾Œã®ãƒšãƒ¼ã‚¸ã‚’æŒ‡å®š
 			/*
-			 *ƒƒ‚FƒRƒ“ƒgƒ[ƒ‰–¼‚Æƒƒ\ƒbƒh‚ÅŽw’è‚·‚éA
-			 * ‚»‚¤‚·‚é‚Æ•K‘R“I‚Éƒrƒ…[‚ª‘Io‚³‚ê‚éB
+			 *ãƒ¡ãƒ¢ï¼šã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©åã¨ãƒ¡ã‚½ãƒƒãƒ‰ã§æŒ‡å®šã™ã‚‹ã€
+			 * ãã†ã™ã‚‹ã¨å¿…ç„¶çš„ã«ãƒ“ãƒ¥ãƒ¼ãŒé¸å‡ºã•ã‚Œã‚‹ã€‚
 			 */
 			'loginRedirect' => array(
-				'controller' => 'posts',	//ƒRƒ“ƒgƒ[ƒ‰‚ÌŽw’è
-				'action' => 'index'			//ƒRƒ“ƒgƒ[ƒ‰“à‚Ìƒƒ\ƒbƒh‚ðŽw’è
+				'controller' => 'posts',	//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©ã®æŒ‡å®š
+				'action' => 'index'			//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©å†…ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒ‡å®š
 			),
 			'logoutRedirect' => array(
-				'controller' => 'pages',	//ƒRƒ“ƒgƒ[ƒ‰‚ÌŽw’è
-				'action' => 'display',		//ƒRƒ“ƒgƒ[ƒ‰“à‚Ìƒƒ\ƒbƒh‚ðŽw’è
+				'controller' => 'pages',	//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©ã®æŒ‡å®š
+				'action' => 'display',		//ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©å†…ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒ‡å®š
 				'home'
 			),
 			'authenticate' => array(
@@ -49,13 +49,13 @@ class AppController extends Controller {
 		)
 	);
 	
-	//”FØ‘O‚Å‚à‰{——‚Å‚«‚éƒy[ƒW‚ðÝ’è
+	//èªè¨¼å‰ã§ã‚‚é–²è¦§ã§ãã‚‹ãƒšãƒ¼ã‚¸ã‚’è¨­å®š
 	/*
-	 *ƒƒ‚F‘S‚Ä‚ÌƒRƒ“ƒgƒ[ƒ‰‚Ìindex‚Æbiew‚ð‘ÎÛ‚Æ‚·‚é
-	 *‚Ü‚½AƒRƒ“ƒgƒ[ƒ‰“à‚Ì“Á’èƒAƒNƒVƒ‡ƒ“(‚ðŠÜ‚Þƒrƒ…[)‚É‘Î‚µ‚Ä
-	 *“¯—l‚ÉbeforeFilter‚·‚éê‡‚ÍAŠY“–‚ÌƒRƒ“ƒgƒ[ƒ‰“à‚É‹Lq‚·‚é
-	 *¡‰ñ‚ÍUsersController“à‚É‚ ‚éadd‚ÆŒ¾‚¤ƒy[ƒW(ƒ†[ƒU[’Ç‰Áƒy[ƒW)‚É
-	 *•Ê“rŒ ŒÀ‚ð—^‚¦‚Ä‚¢‚éB
+	 *ãƒ¡ãƒ¢ï¼šå…¨ã¦ã®ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©ã®indexã¨biewã‚’å¯¾è±¡ã¨ã™ã‚‹
+	 *ã¾ãŸã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©å†…ã®ç‰¹å®šã‚¢ã‚¯ã‚·ãƒ§ãƒ³(ã‚’å«ã‚€ãƒ“ãƒ¥ãƒ¼)ã«å¯¾ã—ã¦
+	 *åŒæ§˜ã«beforeFilterã™ã‚‹å ´åˆã¯ã€è©²å½“ã®ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©å†…ã«è¨˜è¿°ã™ã‚‹
+	 *ä»Šå›žã¯UsersControllerå†…ã«ã‚ã‚‹addã¨è¨€ã†ãƒšãƒ¼ã‚¸(ãƒ¦ãƒ¼ã‚¶ãƒ¼è¿½åŠ ãƒšãƒ¼ã‚¸)ã«
+	 *åˆ¥é€”æ¨©é™ã‚’ä¸Žãˆã¦ã„ã‚‹ã€‚
 	 */
 	public function beforeFilter() {
 		$this->Auth->allow('index','view','input');
