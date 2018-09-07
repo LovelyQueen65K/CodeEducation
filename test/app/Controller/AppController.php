@@ -1,6 +1,6 @@
 <?php
 /**
- * Application level Controlleraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ * Application level Controlleraaaaaaaaaaa
  *
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
